@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MAINE — Beats</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #080808;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      padding: 30px 7%;
+      border-bottom: 1px solid #222;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: 4px;
+    }
+
+    nav a {
+      color: #aaa;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
+      padding: 100px 7% 70px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(50px, 10vw, 100px);
+      letter-spacing: 8px;
+      font-weight: 900;
+    }
+
+    .hero p {
+      color: #888;
+      margin-top: 15px;
+      font-size: 16px;
+    }
+
+    .beats {
+      width: 86%;
+      max-width: 1100px;
+      margin: auto;
+      padding-bottom: 100px;
+    }
+
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+
+    .beat {
+      border: 1px solid #242424;
+      background: #0d0d0d;
+      padding: 22px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+
+    .beat-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .beat-name {
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    .info {
+      color: #777;
+      font-size: 13px;
+      margin-top: 7px;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 18px;
+    }
+
+    .prices {
+      display: flex;
+      gap: 10px;
+      margin-top: 18px;
+      flex-wrap: wrap;
+    }
+
+    .price {
+      border: 1px solid #333;
+      padding: 10px 16px;
+      border-radius: 6px;
+      color: #ddd;
+      font-size: 13px;
+    }
+
+    .price:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    .about {
+      width: 86%;
+      max-width: 900px;
+      margin: 0 auto 100px;
+      border-top: 1px solid #222;
+      padding-top: 50px;
+    }
+
+    .about h2 {
+      margin-bottom: 15px;
+    }
+
+    .about p {
+      color: #888;
+      line-height: 1.7;
+    }
+
+    footer {
+      border-top: 1px solid #222;
+      padding: 30px 7%;
+      color: #555;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 22px;
+      }
+
+      nav a {
+        margin-left: 10px;
+      }
+
+      .hero {
+        padding: 70px 20px;
+      }
+
+      .beats,
+      .about {
+        width: 90%;
+      }
+
+      .beat-top {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">MAINE</div>
+
+    <nav>
+      <a href="#beats">BEATS</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>MAINE</h1>
+    <p>beats for artists.</p>
+  </section>
+
+  <section class="beats" id="beats">
+
+    <h2 class="section-title">LATEST BEATS</h2>
+
+    <!-- BEAT 1 -->
+    <div class="beat">
+
+      <div class="beat-top">
+        <div>
+          <div class="beat-name">BEAT ONE</div>
+          <div class="info">150 BPM • C MINOR • RAGE</div>
+        </div>
+      </div>
+
+      <audio controls>
+        <source src="" type="audio/mpeg">
+      </audio>
+
+      <div class="prices">
+        <div class="price">MP3 — $20</div>
+        <div class="price">WAV — $35</div>
+        <div class="price">EXCLUSIVE — $150</div>
+      </div>
+
+    </div>
+
+
+    <!-- BEAT 2 -->
+    <div class="beat">
+
+      <div class="beat-top">
+        <div>
+          <div class="beat-name">BEAT TWO</div>
+          <div class="info">145 BPM • D MINOR • PLUGG</div>
+        </div>
+      </div>
+
+      <audio controls>
+        <source src="" type="audio/mpeg">
+      </audio>
+
+      <div class="prices">
+        <div class="price">MP3 — $20</div>
+        <div class="price">WAV — $35</div>
+        <div class="price">EXCLUSIVE — $150</div>
+      </div>
+
+    </div>
+
+
+    <!-- BEAT 3 -->
+    <div class="beat">
+
+      <div class="beat-top">
+        <div>
+          <div class="beat-name">BEAT THREE</div>
+          <div class="info">160 BPM • F MINOR • DARK</div>
+        </div>
+      </div>
+
+      <audio controls>
+        <source src="" type="audio/mpeg">
+      </audio>
+
+      <div class="prices">
+        <div class="price">MP3 — $20</div>
+        <div class="price">WAV — $35</div>
+        <div class="price">EXCLUSIVE — $150</div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="about" id="about">
+
+    <h2>ABOUT MAINE</h2>
+
+    <p>
+      Producer from Virginia creating beats for artists.
+      Built for artists looking for their own sound.
+    </p>
+
+  </section>
+
+
+  <footer id="contact">
+    CONTACT — your@email.com
+    <br><br>
+    © 2026 MAINE
+  </footer>
+
+</body>
+</html>
